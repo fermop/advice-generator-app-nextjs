@@ -3,7 +3,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Frontend Mentor | Advice generator app with Next.js ",
+  title: "Frontend Mentor | Advice generator app with Next.js",
   description: "Generate a random quote!",
 };
 
@@ -20,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} font-manrop`}
+        className={`min-h-90 h-dvh w-screen flex flex-col items-center justify-center bg-neutral-blue-950 ${manrope.variable} font-manrope p-4`}
       >
-        {children}
+        <main className="w-full">
+          {children}
+        </main>
       </body>
     </html>
   );
