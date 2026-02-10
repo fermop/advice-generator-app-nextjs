@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --primary-blue-200: hsl(193, 38%, 86%);
+  --primary-green-300: hsl(150, 100%, 66%);
+  --neutral-blue-600: hsl(217, 19%, 38%);
+  --neutral-blue-900: hsl(217, 19%, 24%);
+  --neutral-blue-950: hsl(218, 23%, 16%);
+}
+
+@theme inline {
+  --color-primary-blue-200: var(--primary-blue-200);
+  --color-primary-green-300: var(--primary-green-300);
+  --color-neutral-blue-600: var(--neutral-blue-600);
+  --color-neutral-blue-900: var(--neutral-blue-900);
+  --color-neutral-blue-950: var(--neutral-blue-950);
+
+  --font-manrope: var(--font-manrope);
+
+  --animate-fade-in-up: fade-in-up 0.6s ease-out forwards;
+  
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
