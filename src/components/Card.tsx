@@ -29,7 +29,7 @@ export default function Card() {
   }
 
   return (
-    <div className='animate-fade-in-up'>
+    <div className={`${isLoading ? 'animate-pulse' : 'animate-fade-in-up'}`}>
       <article className='relative min-h-79 md:min-h-83 w-full max-w-135 bg-neutral-blue-900 text-center rounded-lg px-6 py-12 md:p-12 m-auto shadow-xl flex flex-col gap-6'>
 
         {/* ADVICE ID */}
